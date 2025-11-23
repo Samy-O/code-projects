@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+html{
+  margin: 0;
+  height: 100vh;
+}
+
+body{
+  font-family: "Titan One", Helvetica, sans-serif;
+  background-color: rgb(1, 18, 33);
+  color: antiquewhite;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  gap: 30px;
+}
+
+h1{
+  font-size: 50px;
+}
+
+footer{
+  padding: 20px;
+margin-top: auto;
+}
+
+.timer{
+  font-size: 80px;
+  margin: 0;
+}
+
+p#timerTime{
+  margin: 0;
+}
+
+.scoreZone{
+  width:auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  align-items: stretch;
+  flex-grow: 1;
+  max-height: 50%;
+}
+
+.scoreZoneA{
+  display: flex;
+  background-color: rgb(81, 30, 3);
+  border: 3px solid rgb(240, 112, 0);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(240, 112, 0);
+  font-size:200px;
+  width: 50%;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  flex: 1;
+}
+
+.scoreZoneB{
+  display: flex;
+  background-color: rgb(2, 73, 29);
+  border: 3px solid rgb(1, 206, 79);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(1, 206, 79);
+  font-size:200px;
+  width: 50%;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  flex: 1;
+}
+
+.scoreButtons{
+  padding: 20px 0;
+  height: auto;
+}
+
+button{
+  font-size: 20px;
+  font-family: "Titan One", Helvetica, sans-serif;
+  color: rgb(1, 18, 33);
+  padding:10px 40px 10px 40px;
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+
+button:active{
+  color: antiquewhite;
+  background-color: rgb(1, 18, 33);
+
+}
+
