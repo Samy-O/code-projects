@@ -23,7 +23,8 @@ h1{
 
 footer{
   padding: 20px;
-margin-top: auto;
+  margin-top: auto;
+  font-size: 25px;
 }
 
 .timer{
@@ -39,10 +40,11 @@ p#timerTime{
   width:auto;
   display: flex;
   flex-wrap: nowrap;
-  gap: 30px;
+  gap: 30px 30px;
   align-items: stretch;
   flex-grow: 1;
   max-height: 50%;
+  padding: 0 30px 0 30px;
 }
 
 .scoreZoneA{
@@ -89,12 +91,14 @@ p#timerTime{
 }
 
 button{
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Titan One", Helvetica, sans-serif;
   color: rgb(1, 18, 33);
   padding:10px 40px 10px 40px;
   background-color: antiquewhite;
   border-radius: 5px;
+  height: 100px;
+  width: 200px;
 }
 
 button:active{
