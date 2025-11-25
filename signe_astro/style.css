@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+html, body {
+    background-color: rgb(0, 15, 37);
+    color: antiquewhite;
+    font-family: 'Titan One', Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+  font-size: 50px;
+}
+
+.submitForm {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+}
