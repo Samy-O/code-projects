@@ -2,12 +2,13 @@ const fs = require('fs');
 
 // turn list into an array
 
-
 const lines = fs.readFileSync('input.txt', 'utf8').trim().split(',');
 
-// iterate over each item in array
+// iterate over each ID range in array
 
     // IMPORTANT - check if error is possible to avoid checking every value in range
+
+    // compare first halves
 
 lines.forEach(line) => {
     
@@ -27,6 +28,8 @@ lines.forEach(line) => {
 });
 
 
-// corner case ????
+// corner cases : 
+    // numbers lower than 10 
+    // IDs composed of odd number of digits
 
 console.log(lines);
