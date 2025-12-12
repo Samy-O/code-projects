@@ -1,6 +1,12 @@
+import { toRepublican } from 'revolutionary-calendar';
+
 const birthDay = document.getElementById('birthDay');
 const birthMonth = document.getElementById('birthMonth');
 const submitButton = document.getElementById('submitButton');
+
+
+let republicanDate = toRepublican(new Date(1794, 4, 20));
+console.log(republicanDate)
 
 submitButton.addEventListener('click', function(){
   if (birthDay.value === '') {
