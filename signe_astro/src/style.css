@@ -46,7 +46,11 @@ button{
 }
 
 .result{
+  flex-direction: column;
+}
 
+#result > p {
+  margin: 2px;
 }
 
 footer{
