@@ -1,10 +1,12 @@
 import { toRepublican } from 'revolutionary-calendar';
+import mapping from './mapping.json';
 
 const birthDay = document.getElementById('birthDay');
 const birthMonth = document.getElementById('birthMonth');
 const submitButton = document.getElementById('submitButton');
 const resultArea = document.getElementById('result');
-let baseDate = 1792;
+const resultSign = document.getElementById('resultSign');
+const resultDate = document.getElementById('resultDate');
 
 submitButton.addEventListener('click', function(){
   if (birthDay.value === '') {
@@ -18,27 +20,22 @@ submitButton.addEventListener('click', function(){
   }
 
   else {
-    // make calculation print result here
-    resultArea.style.display="flex";
-    resultArea.innerText=getRepublicanDate();
+    let repDate = getRepublicanDate();
+    let repDateArray = repDate.split(" ");
+    let repDay = repDateArray[0];
+    let repMonth = repDateArray[1];
+
+    
+    const repSign = mapping.mois.find(item => item.nom.toLowerCase() === repMonth)?.jours.find(item => item.jour === parseInt(repDay))?.signe;
+    
+    resultArea.style.display = "flex";
+    resultDate.innerText = repDate ;
+    resultSign.innerText = repSign ;
   }
 });
 
 function getRepublicanDate(){
-
-  if (birthMonth.value < 9 && birthDay.value < 22 ){
-    baseDate = 1793;
-  }
-
-  let republicanDate = toRepublican(new Date(baseDate, birthMonth.value, birthDay.value));
-  console.log(republicanDate);
+  let republicanDate = toRepublican(new Date(1793, parseInt(birthMonth.value) - 1, parseInt(birthDay.value)));
   return republicanDate;
-}
+};
 
-// convert 
-
-// if month < 9 and start in 1793
-// if month = 9 and day < 22 start in 1793
-// else start in 1792
-// 
-// calculate difference between entered date and first day of calendar
