@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+html{
+  margin: 0;
+  height: 100vh;
+}
+
+body{
+  font-family: "Roboto Mono", Helvetica, sans-serif;
+  background-color: rgb(1, 18, 33);
+  color: antiquewhite;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  gap: 30px;
+}
+
+h1{
+  font-size: 50px;
+}
+
+footer{
+  padding: 20px;
+  margin-top: auto;
+  font-size: 25px;
+}
+
+.cardZone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  justify-content: flex-start;
+}
+
+.cardZone > * {
+  border: 2px solid rgb(42, 51, 59);
+  border-radius: 5px;
+  width: 30%
+
+}
