@@ -15,6 +15,7 @@ body{
   flex-direction: column;
   margin: 0;
   gap: 30px;
+  padding: 10px;
 }
 
 h1{
@@ -27,12 +28,20 @@ footer{
   font-size: 25px;
 }
 
+textarea {
+  color: antiquewhite;
+  background: 0%;
+  border: none;
+  resize: none;
+}
+
 .cardZone {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px 10px;
   justify-content: flex-start;
+  align-content: flex-start;
 }
 
 .cardZone > * {
@@ -40,4 +49,8 @@ footer{
   border-radius: 5px;
   width: 30%
 
+}
+
+#cardTitle {
+  padding: 1em;
 }
