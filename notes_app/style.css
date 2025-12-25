@@ -32,8 +32,8 @@ textarea {
   color: antiquewhite;
   background: 0%;
   border: none;
+  resize: none;
   width: 90%;
-  field-sizing: content;
 }
 
 .cardZone {
