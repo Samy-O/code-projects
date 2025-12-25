@@ -32,7 +32,8 @@ textarea {
   color: antiquewhite;
   background: 0%;
   border: none;
-  resize: none;
+  width: 90%;
+  field-sizing: content;
 }
 
 .cardZone {
@@ -47,8 +48,9 @@ textarea {
 .cardZone > * {
   border: 2px solid rgb(42, 51, 59);
   border-radius: 5px;
-  width: 30%
-
+  width: 240px;
+  max-height: 600px;
+  height: 100%;
 }
 
 #cardTitle {
