@@ -28,21 +28,13 @@ footer{
   font-size: 25px;
 }
 
-textarea {
-  color: antiquewhite;
-  background: 0%;
-  border: none;
-  resize: none;
-  width: 90%;
-}
-
 .cardZone {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px 10px;
   justify-content: flex-start;
-  align-content: flex-start;
+  align-items: center;
 }
 
 .cardZone > * {
@@ -55,4 +47,7 @@ textarea {
 
 #cardTitle {
   padding: 1em;
+  font-size: 1.5rem;
 }
+
+div:focus {outline:0;}
